@@ -120,9 +120,7 @@ function apply_velocity() {
 
 
 function apply_angularvelocity() {
-	for(let i = 0; i < crate.length; i++) {
-		Matter.Body.setAngularVelocity( crate[i].body, Math.PI/get_random(3, 20));
-	}
+	Matter.Body.setAngularVelocity( crate.body, Math.PI/get_random(3, 20));
 };
 
 
